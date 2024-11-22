@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .text{
+            color: white;
+            font-family: "Roboto";
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .buttons{
+            gap: 5px;
+            margin: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            width:90px;
+            color: black;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .text.roundCard {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 900;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
+    <button class="buttons text" id="rock">Rock</button>
+    <button class="buttons text" id="paper">Paper</button>
+    <button class="buttons text" id="scissors">Scissors</button>
     
+    <div class = "container" id="results">
+
+    </div>
 </body>
 </html>
